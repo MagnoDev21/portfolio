@@ -1,0 +1,726 @@
+@media (min-width: 320px) and (max-width: 425px) {
+
+    * {
+      margin: 0;
+    }
+  
+    header {
+      width: 100%;
+      padding: 2%;
+      background-image: linear-gradient(to right, #805984, #bb7ea8);
+    }
+  
+    /* ícones head */
+    .media {
+      display: none;
+    }
+  
+    /* Botão hamburguer */
+    .hamb {
+      margin-left: 5%;
+      text-align: center;
+      margin-top: 1%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      /* Centraliza horizontalmente */
+      align-items: center;
+      /* Centraliza verticalmente */
+    }
+  
+    #menu {
+      color: rgba(0, 0, 0, 0.664);
+      font-size: 40px;
+      display: inline;
+      cursor: pointer;
+      position: absolute;
+      z-index: 9999;
+    }
+  
+    #menu:hover {
+      color: rgba(17, 0, 255, 0.363);
+      font-size: 40px;
+      display: inline;
+    }
+  
+    /* Container do menu */
+    #menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 80%;
+      height: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-in-out;
+      z-index: 9998;
+    }
+  
+    /* Menu de navegação */
+    .menu-nav {
+      display: block;
+      margin-left: 10%;
+      margin-top: 30%;
+    }
+  
+    .menu-nav a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.664);
+      display: block;
+      font-size: 30px;
+    }
+  
+    .menu-nav a:hover {
+      text-decoration: none;
+      color: rgba(17, 0, 255, 0.363);
+      padding-top: 8%;
+      text-align: center;
+      display: block;
+      font-size: 50px;
+    }
+  
+    /* apresentação */
+    .presentation h2 {
+      text-align: center;
+      color: #805984;
+      margin-top: 2%;
+    }
+  
+    .presentation p {
+      text-align: center;
+      color: #805984;
+    }
+  
+    /* cards */
+    .card {
+      display: inline-block;
+      flex-wrap: wrap;
+      width: 80%;
+      height: 50%;
+      margin-left: 5%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.664), rgba(17, 0, 255, 0.363));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+  
+    .card img {
+      width: 40%;
+      /* Use a largura máxima disponível */
+      height: 40%;
+      /* A altura se ajustará automaticamente proporcionalmente à largura */
+      border-radius: 4px;
+      float: left;
+      margin-right: 8px;
+    }
+  
+    /* ícones */
+    #calculadora img {
+      width: 38%;
+      height: 38%;
+    }
+  
+    #login {
+      margin-top: 1%;
+    }
+  
+    #login img {
+      width: 35%;
+      height: 35%;
+    }
+  
+    /* textos */
+    .card h3 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: auto;
+    }
+  
+    .card p {
+      text-align: center;
+      margin: 0;
+      font-size: auto;
+    }
+  
+    .card ul p {
+      margin-top: 10%;
+      font-size: auto;
+      font-weight: bold;
+    }
+  
+    .card ul li {
+      margin-top: 3%;
+      font-size: auto;
+    }
+  
+  
+    /* footer */
+    footer {
+      width: 92%;
+      background-image: linear-gradient(to right, #bb7ea8, #805984);
+      padding: 10px;
+      /* Espaçamento interno */
+    }
+  
+    .footer-container {
+      display: flex;
+      /* Exibir os elementos em linha */
+    }
+  
+    .footer-left{
+      width: 40%;
+    }
+  
+    .footer-middle {
+      width: 40%;
+      margin-left: 20%;
+      flex-basis: 20%;
+      /* Largura do elemento */
+    }
+  
+    h3 {
+      font-size: 15px;
+      /* Tamanho da fonte do título */
+      margin-bottom: 10px;
+      /* Margem inferior do título */
+    }
+  
+    p {
+      font-size: 14px;
+      /* Tamanho da fonte do texto */
+      margin-bottom: 5px;
+      /* Margem inferior do texto */
+    }
+  
+    footer ul {
+      list-style-type: none;
+      /* Remover marcadores da lista */
+      padding: 0;
+      /* Remover padding da lista */
+      margin-bottom: 10px;
+      /* Margem inferior da lista */
+    }
+  
+    ul li {
+      margin-bottom: 5px;
+      /* Margem inferior dos itens da lista */
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .bottom-footer {
+      width: 80%;
+      margin-top: 20px;
+      /* Margem superior do rodapé inferior */
+      font-size: 20px;
+      /* Tamanho da fonte do rodapé inferior */
+      text-align: center;
+      /* Alinhamento de texto do rodapé inferior */
+    }
+  
+    .bottom-footer p {
+      margin-bottom: 5px;
+      /* Margem inferior do texto do rodapé inferior */
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 768px) {
+  
+    * {
+      margin: 0;
+    }
+  
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2%;
+      background-image: linear-gradient(to right, #805984, #bb7ea8);
+    }
+  
+  
+  
+    /* ícones head */
+    .media {
+      display: inline;
+      margin-left: 10%;
+      display: none;
+    }
+  
+    .media img {
+      width: 50px;
+      padding: 6px;
+    }
+  
+    /* Botão hamburguer */
+    .hamb {
+      margin-left: 5%;
+      text-align: center;
+      margin-top: 1%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      /* Centraliza horizontalmente */
+      align-items: center;
+      /* Centraliza verticalmente */
+    }
+  
+    #menu {
+      color: rgba(0, 0, 0, 0.664);
+      font-size: 40px;
+      display: inline;
+      cursor: pointer;
+      position: absolute;
+      z-index: 9999;
+    }
+  
+    #menu:hover {
+      color: rgba(17, 0, 255, 0.363);
+      font-size: 40px;
+      display: inline;
+    }
+  
+    /* Container do menu */
+    #menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 80%;
+      height: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-in-out;
+      z-index: 9998;
+    }
+  
+    /* Menu de navegação */
+    .menu-nav {
+      display: block;
+      margin-left: 10%;
+      margin-top: 30%;
+    }
+  
+    .menu-nav a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.664);
+      display: block;
+      font-size: 30px;
+    }
+  
+    .menu-nav a:hover {
+      text-decoration: none;
+      color: rgba(17, 0, 255, 0.363);
+      padding-top: 8%;
+      text-align: center;
+      display: block;
+      font-size: 50px;
+    }
+  
+    /* apresentação */
+    .presentation h2 {
+      text-align: center;
+      color: #805984;
+      margin-top: 2%;
+    }
+  
+    .presentation p {
+      text-align: center;
+      color: #805984;
+    }
+  
+    /* cards */
+    .card {
+      display: inline-block;
+      flex-wrap: wrap;
+      width: 80%;
+      height: 50%;
+      margin-left: 5%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.664), rgba(17, 0, 255, 0.363));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+  
+    .card img {
+      width: 40%;
+      /* Use a largura máxima disponível */
+      height: 40%;
+      /* A altura se ajustará automaticamente proporcionalmente à largura */
+      border-radius: 4px;
+      float: left;
+      margin-right: 8px;
+    }
+  
+    /* ícones */
+    #calculadora img {
+      width: 38%;
+      height: 38%;
+    }
+  
+    #login {
+      margin-top: 1%;
+    }
+  
+    #login img {
+      width: 35%;
+      height: 35%;
+    }
+  
+    /* textos */
+    .card h3 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: auto;
+    }
+  
+    .card p {
+      text-align: center;
+      margin: 0;
+      font-size: auto;
+    }
+  
+    .card ul p {
+      margin-top: 10%;
+      font-size: auto;
+      font-weight: bold;
+    }
+  
+    .card ul li {
+      margin-top: 3%;
+      font-size: auto;
+    }
+  
+  
+    /* footer */
+    footer {
+      background-image: linear-gradient(to right, #bb7ea8, #805984);
+      padding: 20px;
+      /* Espaçamento interno */
+    }
+  
+    .footer-container {
+      display: flex;
+      /* Exibir os elementos em linha */
+      justify-content: space-between;
+      /* Alinhar os elementos às extremidades */
+    }
+  
+    .footer-left {
+      flex-basis: 50%;
+      /* Largura do elemento */
+    }
+  
+    .footer-middle {
+      flex-basis: 30%;
+      /* Largura do elemento */
+    }
+  
+    h3 {
+      font-size: 18px;
+      /* Tamanho da fonte do título */
+      margin-bottom: 10px;
+      /* Margem inferior do título */
+    }
+  
+    p {
+      font-size: 14px;
+      /* Tamanho da fonte do texto */
+      margin-bottom: 5px;
+      /* Margem inferior do texto */
+    }
+  
+    footer ul {
+      list-style-type: none;
+      /* Remover marcadores da lista */
+      padding: 0;
+      /* Remover padding da lista */
+      margin-bottom: 10px;
+      /* Margem inferior da lista */
+    }
+  
+    ul li {
+      margin-bottom: 5px;
+      /* Margem inferior dos itens da lista */
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .bottom-footer {
+      margin-top: 20px;
+      /* Margem superior do rodapé inferior */
+      font-size: 12px;
+      /* Tamanho da fonte do rodapé inferior */
+      text-align: center;
+      /* Alinhamento de texto do rodapé inferior */
+    }
+  
+    .bottom-footer p {
+      margin-bottom: 5px;
+      /* Margem inferior do texto do rodapé inferior */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+  
+    * {
+      margin: 0;
+    }
+  
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2%;
+      background-image: linear-gradient(to right, #805984, #bb7ea8);
+    }
+  
+    /* ícones head */
+    .media {
+      display: inline;
+      
+    }
+  
+    .media img {
+      width: 50px;
+      padding: 6px;
+    }
+  
+    /* Botão hamburguer */
+    .hamb {
+      margin-left: 5%;
+      text-align: center;
+      margin-top: 1%;
+      width: 40px;
+      height: 40px;
+      display: none;
+      justify-content: center;
+      /* Centraliza horizontalmente */
+      align-items: center;
+      /* Centraliza verticalmente */
+    }
+  
+    #menu {
+      color: rgba(0, 0, 0, 0.664);
+      font-size: 40px;
+      display: inline;
+      cursor: pointer;
+      position: absolute;
+      z-index: 9999;
+    }
+  
+    #menu:hover {
+      color: rgba(17, 0, 255, 0.363);
+      font-size: 40px;
+      display: inline;
+    }
+  
+    /* Container do menu */
+    #menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 80%;
+      height: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-in-out;
+      z-index: 9998;
+    }
+  
+    /* Menu de navegação */
+    .menu-nav {
+      display: block;
+      margin-left: 10%;
+      margin-top: 30%;
+    }
+  
+    .menu-nav a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.664);
+      display: block;
+      font-size: 30px;
+    }
+  
+    .menu-nav a:hover {
+      text-decoration: none;
+      color: rgba(17, 0, 255, 0.363);
+      padding-top: 8%;
+      text-align: center;
+      display: block;
+      font-size: 50px;
+    }
+  
+    /* apresentação */
+    .presentation h2 {
+      text-align: center;
+      color: #805984;
+      margin-top: 2%;
+    }
+  
+    .presentation p {
+      text-align: center;
+      color: #805984;
+    }
+  
+    /* cards */
+    .card {
+      display: inline-block;
+      flex-wrap: wrap;
+      width: 80%;
+      height: 50%;
+      margin-left: 5%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.664), rgba(17, 0, 255, 0.363));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+  
+    .card img {
+      width: 40%;
+      /* Use a largura máxima disponível */
+      height: 40%;
+      /* A altura se ajustará automaticamente proporcionalmente à largura */
+      border-radius: 4px;
+      float: left;
+      margin-right: 8px;
+    }
+  
+    /* ícones */
+    #calculadora img {
+      width: 38%;
+      height: 38%;
+    }
+  
+    #login {
+      margin-top: 1%;
+    }
+  
+    #login img {
+      width: 35%;
+      height: 35%;
+    }
+  
+    /* textos */
+    .card h3 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: auto;
+    }
+  
+    .card p {
+      text-align: center;
+      margin: 0;
+      font-size: auto;
+    }
+  
+    .card ul p {
+      margin-top: 10%;
+      font-size: auto;
+      font-weight: bold;
+    }
+  
+    .card ul li {
+      margin-top: 3%;
+      font-size: auto;
+    }
+  
+  
+    /* footer */
+    footer {
+      background-image: linear-gradient(to right, #bb7ea8, #805984);
+      padding: 20px;
+      /* Espaçamento interno */
+    }
+  
+    .footer-container {
+      display: flex;
+      /* Exibir os elementos em linha */
+      justify-content: space-between;
+      /* Alinhar os elementos às extremidades */
+    }
+  
+    .footer-left {
+      flex-basis: 50%;
+      /* Largura do elemento */
+    }
+  
+    .footer-middle {
+      flex-basis: 30%;
+      /* Largura do elemento */
+    }
+  
+    h3 {
+      font-size: 18px;
+      /* Tamanho da fonte do título */
+      margin-bottom: 10px;
+      /* Margem inferior do título */
+    }
+  
+    p {
+      font-size: 14px;
+      /* Tamanho da fonte do texto */
+      margin-bottom: 5px;
+      /* Margem inferior do texto */
+    }
+  
+    footer ul {
+      list-style-type: none;
+      /* Remover marcadores da lista */
+      padding: 0;
+      /* Remover padding da lista */
+      margin-bottom: 10px;
+      /* Margem inferior da lista */
+    }
+  
+    ul li {
+      margin-bottom: 5px;
+      /* Margem inferior dos itens da lista */
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .bottom-footer {
+      margin-top: 20px;
+      /* Margem superior do rodapé inferior */
+      font-size: 12px;
+      /* Tamanho da fonte do rodapé inferior */
+      text-align: center;
+      /* Alinhamento de texto do rodapé inferior */
+    }
+  
+    .bottom-footer p {
+      margin-bottom: 5px;
+      /* Margem inferior do texto do rodapé inferior */
+    }
+  }
+  
