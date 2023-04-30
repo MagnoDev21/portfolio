@@ -1,6 +1,6 @@
 // prompt
-//let nome = prompt("Seja Bem-vindo, qual seu nome?");
-//document.getElementById("nome").innerHTML = nome;
+let nome = prompt("Seja Bem-vindo, qual seu nome?");
+document.getElementById("nome").innerHTML = nome;
 
 // função menu
 function clickMenu() {
