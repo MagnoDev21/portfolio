@@ -1,3 +1,3 @@
-Aqui vou testar alguns projetos
+Site portifólio
 
-https://magnodev21.github.io/portfolio/
+https://magnodev21.netlify.app/
