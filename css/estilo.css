@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+}
+
+.logo{
+    flex:30%;
+    margin-left:10%;
+     /* border:1px solid red;  */
+    text-align: left;
+
+}
+
+.logo h1{
+    font-family: 'Lobster', cursive;
+    color:#180F4A;
+    font-size:34px;
+}
+
+.menu{
+    flex:60%;
+   /* border:1px solid green;*/
+    text-align:right;
+    padding:20px;
+}
+
+.menu a{
+    color:#180F4A;
+    text-decoration: none;
+    font-size:20px;
+    padding:20px 16px; 
+}
+
+.menu a:hover{
+    color:#FF2978;
+    border-top:4px solid #180F4A;
+}
+
+#botao{
+    background: #180F4A;
+    padding: 10px 25px;
+    color:white;
+    border-radius:5px;
+    margin-right:10%;
+    margin-left:5%;
+}
+
+#botao:hover{
+    border:none;
+    background: #FF2978;
+}
+
+.header{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top:100px;
+}
+
+.headline{
+    margin-left:10%;
+    flex:40%;
+    /* border:1px solid black; */
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size:20px;
+    color:#180F4A;
+    padding:0;
+    margin:0;
+}
+
+.headline p{
+    color:gray;
+    text-align:left;
+}
+
+
+.contact-btn{
+    display: inline-block;
+    background:#180F4A ;
+    padding:20px;
+    color:white;
+    text-transform: uppercase;
+    border-radius:5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    background:#FF2978;
+}
+
+.img-headline{
+    margin-right:10%;
+    flex:40%;
+    /* border:1px solid deeppink; */
+    text-align:center;
+}
+
+section{
+    display: inline-block;
+    margin-top:80px;
+    /* border:1px solid black; */
+    margin-left:5%;
+    margin-right:5%;
+    padding:5%;
+    text-align: center;
+    
+}
+
+section h2{
+    width:100%;
+    font-size:50px;
+    margin:0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color:#180F4A;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top:5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding:20px;
+    margin:1%;
+    border:1px solid #FF2978;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+.card:hover{
+    padding:40px;
+}
+
+/* .card:hover img{
+    display: none;
+} */
+
+.card:hover .card-text{
+    display:none;
+}
+
+.card:hover .texto-oculto{
+    display:block;
+}
+
+footer{
+    color: aliceblue;
+    margin-top:15%;
+    height: 90%;
+    background-image:linear-gradient(180deg,#180F4A,#090422,black);
+    text-align:center;
+    border-top:5px solid #FF2978;
+}
+
+.footer-container {
+    margin-left: 15%;
+    display: flex;
+    /* Exibir os elementos em linha */
+  }
+
+  .footer-left {
+    width: 80%;
+    margin-top: 2%;
+  }
+
+
+
+  h3 {
+    font-size: 15px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 10px;
+    /* Margem inferior do título */
+  }
+
+  p {
+    font-size: 14px;
+    /* Tamanho da fonte do texto */
+    margin-bottom: 5px;
+    /* Margem inferior do texto */
+  }
+
+  footer ul {
+    list-style-type: none;
+    /* Remover marcadores da lista */
+    padding: 2%;
+    /* Remover padding da lista */
+    margin-bottom: 10px;
+    /* Margem inferior da lista */
+  }
+
+  ul li {
+    margin-bottom: 5px;
+    /* Margem inferior dos itens da lista */
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .bottom-footer {
+    width: 100%;
+    margin-top: 20px;
+    /* Margem superior do rodapé inferior */
+    font-size: 20px;
+    /* Tamanho da fonte do rodapé inferior */
+    text-align: center;
+    /* Alinhamento de texto do rodapé inferior */
+  }
+
+.logo-rodape{
+    padding:100px;
+}
+
+.agencia{
+    font-family: 'Lobster', cursive;
+    color:white;
+    font-size:34px;
+}
+
+.whats{
+    position: fixed;
+    bottom:5px;
+    right:5px;
+   
+}
+
+.footer-left h3{
+    font-size: 25px;
+}
+
+.footer-left P{
+    font-size: 25px;
+}
